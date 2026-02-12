@@ -41,7 +41,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-#        cache: 'npm'
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm install
     - run: npm ci
     - name: Build and Statically Render
       run: npm run predeploy
