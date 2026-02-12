@@ -1,25 +1,25 @@
-import {useEffect} from 'react';
-import {useLocation} from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 
-const {NODE_ENV, REACT_APP_GA_TRACKING_ID} = process.env;
+const { NODE_ENV, REACT_APP_GA_TRACKING_ID } = process.env;
 
 if (NODE_ENV === 'production') {
-    ReactGA.initialize(REACT_APP_GA_TRACKING_ID);
+  ReactGA.initialize(REACT_APP_GA_TRACKING_ID);
 }
 
 const Analytics = () => {
-    const {pathname} = useLocation();
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-        if (NODE_ENV === 'production') {
-            ReactGA.set({
-                page: pathname,
-            });
-        }
-    }, [pathname]);
+  useEffect(() => {
+    if (NODE_ENV === 'production') {
+      ReactGA.set({
+        page: pathname,
+      });
+    }
+  }, [pathname]);
 
-    return null;
+  return null;
 };
 
 export default Analytics;
