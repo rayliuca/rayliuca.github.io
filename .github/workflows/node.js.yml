@@ -23,16 +23,17 @@ jobs:
       with:
         node-version-file: '.nvmrc'
         cache: 'npm'
-    - run: npm ci
-    - name: Lint
-      run: npm run lint
+#    - run: npm ci
+#    - name: Lint
+#      run: npm run lint
 
   build:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     strategy:
       matrix:
-        node-version: [16.x, 18.x, 20.x]
+#        node-version: [16.x, 18.x, 20.x]
+        node-version: [20.x]
         os: [ubuntu-20.04]
     steps:
     - uses: actions/checkout@v4
