@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from 'react'; // eslint-disable-line no-unused-vars
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, {lazy, Suspense} from 'react'; // eslint-disable-line no-unused-vars
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Main from './layouts/Main'; // fallback for lazy pages
 import './static/css/main.scss'; // All of our styles
 
@@ -8,7 +8,7 @@ import './static/css/main.scss'; // All of our styles
 // import Projects from './pages/Projects';
 // import Resume from './pages/Resume';
 
-const { PUBLIC_URL } = process.env;
+const {PUBLIC_URL} = process.env;
 
 // Every route - we lazy load so that each page can be chunked
 // NOTE that some of these chunks are very small. We should optimize
@@ -24,17 +24,17 @@ const Resume = lazy(() => import('./pages/Resume'));
 // const Stats = lazy(() => import('./pages/Stats'));
 
 const App = () => (
-  <BrowserRouter basename={PUBLIC_URL}>
-    <Suspense fallback={<Main />}>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Suspense>
-  </BrowserRouter>
+    <BrowserRouter basename={PUBLIC_URL}>
+        <Suspense fallback={<Main/>}>
+            <Routes>
+                <Route path="/" element={<Index/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/projects" element={<Projects/>}/>
+                <Route path="/resume" element={<Resume/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
+        </Suspense>
+    </BrowserRouter>
 );
 
 export default App;
