@@ -1,5 +1,27 @@
 // TODO Add a couple lines about each project
 const data = [
+    {
+    title: 'Grammared Language',
+    subtitle: 'Adding Grammarly (and other) open source models to LanguageTool',
+    link: 'https://github.com/rayliuca/grammared-language',
+    image: '/images/projects/grammared_language.png',
+    date: '2026-02-01',
+    desc:
+      "Adding Grammarly (and other) open source models to LanguageTool. "
+      + 'Improving the LanguageTool server by adding AI/ ML powered remote grammar checking models to improve contextual corrections. '
+      + 'To improve efficiency, models were served on triton inference server, enabling dynamic batching and horizonal scaling.',
+  },
+    {
+    title: 'T-Ragx',
+    subtitle: 'Enhancing Translation with RAG-Powered Large Language Models',
+    link: 'https://github.com/rayliuca/T-Ragx',
+    image: '/images/projects/T-Ragx.png',
+    date: '2024-03-01',
+    desc:
+      "Enhancing Translation with RAG-Powered Large Language Models. "
+      + 'Adding translation memory and glossary to ground LLM translation outputs.'
+      + ' This framework successfully improved the translation quality by 29% sacrebleu and 0.4% comet22 for task specific translations.',
+  },
   {
     title: 'Pay Day Robo',
     subtitle: '2021 HackED Hackathon - Won the Best use of Google Cloud Award',
