@@ -38,10 +38,10 @@ const data = [
     subtitle: 'subtitle',
     // link: 'https://public.tableau.com/profile/ray.liu#!/vizhome/GlobalAffairsCanadaTravelAdvisoriesMap/Dashboard1',
     image: '/images/projects/ETLC.jpg',
-    // date: '2020-03-1',
+    date: '2020-03-01',
     desc:
       'An e-commerce software using Google Form, App Script, Cloud SQL, and Square Inc. APIs'
-      + ' to register and rent lockers under student clubs’ control in the ETLC building. '
+      + ' to register and rent lockers under student clubs\' control in the ETLC building. '
       + 'Completed the prototype personally, and now collaborating with the other ECE Clubs as the project manager.',
   },
   {
