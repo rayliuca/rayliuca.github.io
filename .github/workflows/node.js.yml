@@ -53,6 +53,6 @@ jobs:
       env:
         NODE_ENV: development
     - name: Test
-      run: npm test
+      run: npm test --no-sandbox
       env:
         NODE_ENV: development
