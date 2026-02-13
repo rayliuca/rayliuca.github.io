@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from 'react'; // eslint-disable-line no-unused-vars
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { lazy, Suspense } from 'react'; // eslint-disable-line no-unused-vars
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './layouts/Main'; // fallback for lazy pages
 import './static/css/main.scss'; // All of our styles
 
