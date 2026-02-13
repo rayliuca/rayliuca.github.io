@@ -21,9 +21,9 @@ const SideBar = () => (
       <h2>About</h2>
       <p>
         Hi, I&apos;m Ray. I like to make fun projects.
-        I am a Machine Learning Engineer at <a href="https://www.drugbank.com/">DrugBank</a> and a <a href="https://www.ualberta.ca/">UAlberta</a> <a href="https://www.ualberta.ca/engineering/co-op/our-program/disciplines-and-specializations/engineering-physics.html">Engineering Physics</a> graduate.
+        I am a Machine Learning Engineer at <a href="https://cresta.com/">Cresta</a> and a <a href="https://www.ualberta.ca/">UAlberta</a> <a href="https://www.ualberta.ca/engineering/co-op/our-program/disciplines-and-specializations/engineering-physics.html">Engineering Physics</a> graduate.
         Previously, I worked
-        at <a href="https://www.altaml.com/">AltaML</a>
+        at <a href="https://www.drugbank.com/">DrugBank</a>, <a href="https://www.altaml.com/">AltaML</a>
         , <a href="https://www.tricca.ca/">Tricca</a>
         , <a href="https://www.microchip.com/">Microchip</a>
         , <a href="http://binaryrg.ece.ualberta.ca/people">the Binary Lab</a>

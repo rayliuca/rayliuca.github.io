@@ -1,9 +1,18 @@
 const positions = [
   {
+    company: 'Cresta',
+    position: 'Machine Learning Engineer',
+    link: 'https://cresta.com/',
+    daterange: 'June 2024 - Current',
+    points: [
+      'Leading the Cresta Agent Assist Smart Compose and Suggestion features',
+    ],
+  },
+  {
     company: 'DrugBank',
     position: 'Machine Learning Engineer II',
     link: 'https://www.drugbank.com/',
-    daterange: 'December 2022 - Current',
+    daterange: 'December 2022 - June 2024',
     points: [
       'Accelerated clinical data curation velocity by 33% by pre-annotating input text using a NER transformer (BERT) NLP model.',
       'Normalized text entities to the DrugBank database using fine-tuned search/ ranking bi-encoder models with >88% F1.',

@@ -37,11 +37,11 @@ jobs:
         os: [ubuntu-22.04]
     steps:
     - uses: actions/checkout@v4
-    - name: install Chromium for testing
-      uses: browser-actions/setup-chromium@v2
-    - run: chrome --version
-    - name: Install Chromium via Snap
-      run: sudo snap install chromium
+#    - name: install Chromium for testing
+#      uses: browser-actions/setup-chromium@v2
+#    - run: chrome --version
+#    - name: Install Chromium via Snap
+#      run: sudo snap install chromium
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
