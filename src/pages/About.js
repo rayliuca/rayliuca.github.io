@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
 
 // import { Helmet } from 'react-helmet-async';
-
 import Main from '../layouts/Main';
 
 const About = () => {
