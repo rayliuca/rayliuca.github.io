@@ -46,7 +46,7 @@ jobs:
       run: npm install
     - run: npm ci
     - name: Build and Statically Render
-      run: npm run predeploy
+      run: npm run build
       env:
         NODE_ENV: development
     - name: Test
