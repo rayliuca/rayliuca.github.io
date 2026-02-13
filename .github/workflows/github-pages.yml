@@ -34,6 +34,7 @@ jobs:
         uses: actions/checkout@v4
       - name: install Chromium for testing
         uses: browser-actions/setup-chromium@v2
+      - run: chrome --version
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
